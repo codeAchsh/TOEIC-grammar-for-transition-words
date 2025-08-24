@@ -21,21 +21,14 @@
   <link rel="shortcut icon" href="imagaes/icon.ico" />
   <link rel="stylesheet" href="assets/style.css">
 
-  <!-- Google Analytics: 同意後にのみ読み込み -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P16Z7PRNNF"></script>
   <script>
-    function loadGoogleAnalytics() {
-      const script = document.createElement('script');
-      script.src = "https://www.googletagmanager.com/gtag/js?id=G-P16Z7PRNNF";
-      script.async = true;
-      document.head.appendChild(script);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      window.gtag = gtag;
-
-      gtag('js', new Date());
-      gtag('config', 'G-P16Z7PRNNF');
-    }
+    gtag('config', 'G-P16Z7PRNNF');
   </script>
 </head>
 <body>
