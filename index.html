@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOEICつなぎ言葉学習</title>
+
+  <!-- ページの説明 -->
+  <meta name="description" content="Learn transition words and their grammatical roles in a calm, intuitive space. / 英語の前置詞、接続詞、接続副詞などのつなぎ言葉の違いを、穏やかで感覚的に学べる空間です。" />
+
+  <!-- SEO関連 -->
+  <meta name="keywords" content="transition words, TOEIC, grammar, parts of speech, intuitive learning, calm design, suffix classification, 英語語尾, TOEIC対策, 前置詞, 接続詞, 接続副詞, つなぎ言葉, 文法, 穏やかな学習" />
+
+  <!-- SNS表示（OpenGraph） -->
+  <meta property="og:title" content="TOEIC Grammar: Learn transition words / TOEIC前置詞、接続詞、副詞などのつなぎ言葉の違いを学ぶ" />
+  <meta property="og:description" content="Explore transition words and their grammatical roles through a gentle, focused interface. / 穏やかで集中しやすい画面で、前置詞、接続詞、接続副詞などのつなぎ言葉の違いを学べます。" />
+  <meta property="og:image" content="https://github.com/codeAchsh/TOEIC-grammar-for-suffixes/blob/main/images/thumbnail.png" />
+  <meta property="og:url" content="https://codeachsh.github.io/TOEIC-grammar-for-suffixes/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="shortcut icon" href="imagaes/icon.ico" />
+  <link rel="stylesheet" href="assets/style.css">
+
+  <!-- Google Analytics: 同意後にのみ読み込み -->
+  <script>
+    function loadGoogleAnalytics() {
+      const script = document.createElement('script');
+      script.src = "https://www.googletagmanager.com/gtag/js?id=G-P16Z7PRNNF";
+      script.async = true;
+      document.head.appendChild(script);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
+
+      gtag('js', new Date());
+      gtag('config', 'G-P16Z7PRNNF');
+    }
+  </script>
+</head>
+<body>
+  <h1>TOEIC -つなぎ言葉の違いを学ぶ：前置詞、接続詞、接続副詞-</h1>
+
+  <div class="info-box">
+    <h2>前置詞・接続詞・接続副詞の使い分けと代表語</h2>
+    <ul class="suffix-list">
+      <li><strong>前置詞（Prepositions）：</strong><br>
+        名詞や代名詞の前に置かれ、場所・時間・原因などを示します。<br>
+        原則として、前置詞の後に節（S+V）は続きません。<br>
+        <p class="example-words">
+            代表語：<code>during</code>, <code>because of</code>, <code>due to</code>, <code>owing to</code>, <code>on account of</code>, <code>despite</code>, <code>in spite of</code>, <code>notwithstanding</code>, <code>in</code>, <code>on</code>, <code>at</code>, <code>by</code>, <code>with</code>, <code>about</code>, <code>for</code>, <code>from</code>, <code>to</code>, <code>under</code>, <code>between</code>, <code>near</code>
+            </p>
+      </li>
+      <li><strong>接続詞（Conjunctions）：</strong><br>
+        節（S+V）をつなぎ、因果・条件・時間などの関係を示します。<br>
+        名詞のカタマリだけが続くことはありません。<br>
+        <p class="example-words">
+            代表語：<code>because</code>, <code>while</code>, <code>since</code>, <code>as</code>, <code>although</code>, <code>though</code>, <code>even though</code>, <code>before</code>, <code>after</code>, <code>until</code>, <code>if</code>, <code>unless</code>, <code>whether</code>, <code>whenever</code>, <code>whereas</code>, <code>even if</code>, <code>in case</code>, <code>as far as</code>, <code>as long as</code>, <code>now that</code>, <code>so that</code>, <code>in order that</code>, <code>provided that</code>, <code>given that</code>, <code>in the event that</code>
+        </p>
+      </li>
+      <li><strong>接続副詞（Conjunctive Adverbs）：</strong><br>
+        文と文を論理的につなぐ副詞で、因果・逆接・追加などの関係を示します。<br>
+        セミコロンやピリオドで文を区切り、接続副詞の後にカンマを置きます。<br>
+        <p class="example-words">
+            代表語：<code>therefore</code>, <code>however</code>, <code>nevertheless</code>, <code>moreover</code>, <code>further</code>, <code>in addition</code>, <code>thus</code>, <code>as a result</code>, <code>meanwhile</code>, <code>in contrast</code>, <code>in fact</code>, <code>otherwise</code>, <code>instead</code>, <code>rather</code>
+        </p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="button-group">
+    <button onclick="showWords('prep')">前置詞</button>
+    <button onclick="showWords('conj')">接続詞</button>
+    <button onclick="showWords('conjAdv')">接続副詞</button>
+  </div>
+
+  <div id="word-list" class="word-list">
+    <textarea placeholder="ボタンをクリックすると、ここに例文が表示されます"></textarea>
+  </div>
+
+  <footer>
+    <div class="ad-template-link">
+      <p>🧁 Links to our works</p>
+      <div>
+        <a href="https://codeachsh.github.io/All-template-Japanese-/" target="_blank">
+          📦 Click here for a list of useful templates.！
+        </a>
+      </div>
+      <div>
+        <a href="https://note.com/chill_2525" target="_blank" class="note-link">
+          ✨ Blogs, templates, and growth records are being compiled and published. → note.com/chill_2525
+        </a>
+      </div>
+    </div>
+    <p>&copy; 2025 Chill_2525 | code.achsh@gmail.com</p>
+  </footer>
+
+  <!-- Consent Banner -->
+  <div id="consent-banner" style="position:fixed;bottom:0;left:0;right:0;background:#f8f8f8;padding:1em;text-align:center;box-shadow:0 -2px 5px rgba(0,0,0,0.1);z-index:9999;">
+    このサイトは分析のためにCookieを使用します。<button onclick="acceptConsent()">同意する</button>
+  </div>
+
+  <script>
+    function acceptConsent() {
+      localStorage.setItem('gentleConsent', 'true');
+      document.getElementById('consent-banner').style.display = 'none';
+      loadGoogleAnalytics();
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const consent = localStorage.getItem('gentleConsent');
+      if (consent === 'true') {
+        document.getElementById('consent-banner').style.display = 'none';
+        loadGoogleAnalytics();
+      }
+    });
+  </script>
+
+  
+
+  <script src="js/script.js"></script>
+</body>
+</html>
