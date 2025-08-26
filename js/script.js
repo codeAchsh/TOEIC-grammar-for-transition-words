@@ -29,7 +29,7 @@ const wordData = {
     { word: 'although', example: 'Although it was cold, she went swimming.' },
     { word: 'though', example: 'Though he was tired, he kept working.' },
     { word: 'even though', example: 'Even though he was tired, he kept working.' },
-    { word: 'before', example: 'Finish your homework before dinner.' },
+    { word: 'before', example: 'Finish your homework before I eat dinner.' },
     { word: 'after', example: 'She felt better after she took the medicine.' },
     { word: 'until', example: 'Stay here until I return.' },
     { word: 'if', example: 'If it rains, we’ll cancel the picnic.' },
@@ -88,3 +88,4 @@ const wordData = {
       <ul>${wordItems}</ul>
     `;
   }
+
